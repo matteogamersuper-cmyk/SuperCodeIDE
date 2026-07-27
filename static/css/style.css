@@ -1,0 +1,138 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #1e1f26;
+    color: #f5f5f5;
+    height: 100vh;
+}
+
+.app_center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    padding: 30px;
+    background: #2a2d3a;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #6aa9ff;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #cfcfcf;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #3a3f4f;
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+button {
+    width: 120px;       /* prima era 100% */
+    height: 35px;       /* altezza ridotta */
+    padding: 6px 10px;  /* prima era 12px */
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #3b82f6;
+    color: white;
+    font-size: 14px;    /* prima era 16px */
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+hr {
+    border: 1px solid #444;
+    margin: 20px 0;
+}
+
+.card {
+    background: #353949;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.success {
+    color: #22c55e;
+}
+
+.error {
+    color: #ef4444;
+}
+
+.info {
+    color: #60a5fa;
+}
+
+/* Rimuovere se non funziona */
+
+.topbar {
+    height: 32px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background: #636060;
+    border-bottom: 1px solid #2d2d2d;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.title {
+    padding-left: 12px;
+
+    font-size: 13px;
+    font-family: "Segoe UI", sans-serif;
+    color: #bdb9b9;
+}
+
+.topbar:hover {
+    background: #202020;
+}
+
+.topbar:active {
+    background: #363535;
+}

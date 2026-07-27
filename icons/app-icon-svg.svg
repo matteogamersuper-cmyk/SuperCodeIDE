@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF"></stop>
+      <stop offset="100%" stop-color="#00D4FF"></stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"></stop>
+      <stop offset="100%" stop-color="#D8F7FF"></stop>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Sfondo -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"></rect>
+
+  <!-- Esagono -->
+  <g filter="url(#shadow)">
+    <polygon points="256,92 376,162 376,350 256,420 136,350 136,162" fill="#101828" opacity="0.95"></polygon>
+  </g>
+
+  <!-- Parentesi codice -->
+  <path d="M205 190 L160 256 L205 322" fill="none" stroke="url(#accent)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <path d="M307 190 L352 256 L307 322" fill="none" stroke="url(#accent)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <!-- S stilizzata -->
+  <path d="
+      M285 185
+      C250 175 225 195 225 220
+      C225 245 287 240 287 270
+      C287 295 255 305 225 292
+    " fill="none" stroke="#32FFB4" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
