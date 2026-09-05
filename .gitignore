@@ -3,4 +3,6 @@ out/
 dist/
 *.log
 .DS_Store
-PackServiceSupport/
+*.swp
+*.un~
+*~
